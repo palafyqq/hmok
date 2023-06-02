@@ -54,7 +54,6 @@
             this.labeltitle.Size = new System.Drawing.Size(166, 20);
             this.labeltitle.TabIndex = 1;
             this.labeltitle.Text = "Наименование услуги";
-            this.labeltitle.Click += new System.EventHandler(this.labeltitle_Click);
             // 
             // labelCostAndTime
             // 
@@ -105,6 +104,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "TileService";
             this.Size = new System.Drawing.Size(654, 150);
+            this.Load += new System.EventHandler(this.TileService_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

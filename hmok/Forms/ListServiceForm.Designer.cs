@@ -35,11 +35,11 @@
             this.BtnSortingV = new MaterialSkin.Controls.MaterialButton();
             this.BtnSortingY = new MaterialSkin.Controls.MaterialButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSearch = new MaterialSkin.Controls.MaterialButton();
-            this.btnRecord = new MaterialSkin.Controls.MaterialButton();
-            this.btnAddService = new MaterialSkin.Controls.MaterialButton();
             this.btnNearest = new MaterialSkin.Controls.MaterialButton();
+            this.btnAddService = new MaterialSkin.Controls.MaterialButton();
+            this.btnRecord = new MaterialSkin.Controls.MaterialButton();
             this.btnExit = new MaterialSkin.Controls.MaterialButton();
+            this.btnSearch = new MaterialSkin.Controls.MaterialButton();
             this.labelCount = new MaterialSkin.Controls.MaterialLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -53,7 +53,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(178, 51);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+          
             // 
             // materialLabel1
             // 
@@ -147,46 +147,25 @@
             this.panel2.Size = new System.Drawing.Size(178, 342);
             this.panel2.TabIndex = 3;
             // 
-            // btnSearch
+            // btnNearest
             // 
-            this.btnSearch.AutoSize = false;
-            this.btnSearch.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnSearch.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnSearch.Depth = 0;
-            this.btnSearch.HighEmphasis = true;
-            this.btnSearch.Icon = null;
-            this.btnSearch.Location = new System.Drawing.Point(7, 25);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnSearch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnSearch.Size = new System.Drawing.Size(167, 36);
-            this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "Поиск";
-            this.btnSearch.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnSearch.UseAccentColor = false;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // btnRecord
-            // 
-            this.btnRecord.AutoSize = false;
-            this.btnRecord.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnRecord.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnRecord.Depth = 0;
-            this.btnRecord.HighEmphasis = true;
-            this.btnRecord.Icon = null;
-            this.btnRecord.Location = new System.Drawing.Point(7, 73);
-            this.btnRecord.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnRecord.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnRecord.Name = "btnRecord";
-            this.btnRecord.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnRecord.Size = new System.Drawing.Size(167, 36);
-            this.btnRecord.TabIndex = 4;
-            this.btnRecord.Text = "Записать клиента";
-            this.btnRecord.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnRecord.UseAccentColor = false;
-            this.btnRecord.UseVisualStyleBackColor = true;
+            this.btnNearest.AutoSize = false;
+            this.btnNearest.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnNearest.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnNearest.Depth = 0;
+            this.btnNearest.HighEmphasis = true;
+            this.btnNearest.Icon = null;
+            this.btnNearest.Location = new System.Drawing.Point(7, 169);
+            this.btnNearest.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnNearest.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnNearest.Name = "btnNearest";
+            this.btnNearest.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnNearest.Size = new System.Drawing.Size(167, 36);
+            this.btnNearest.TabIndex = 4;
+            this.btnNearest.Text = "Ближайшие записи";
+            this.btnNearest.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnNearest.UseAccentColor = false;
+            this.btnNearest.UseVisualStyleBackColor = true;
             // 
             // btnAddService
             // 
@@ -208,25 +187,25 @@
             this.btnAddService.UseAccentColor = false;
             this.btnAddService.UseVisualStyleBackColor = true;
             // 
-            // btnNearest
+            // btnRecord
             // 
-            this.btnNearest.AutoSize = false;
-            this.btnNearest.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnNearest.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnNearest.Depth = 0;
-            this.btnNearest.HighEmphasis = true;
-            this.btnNearest.Icon = null;
-            this.btnNearest.Location = new System.Drawing.Point(7, 169);
-            this.btnNearest.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnNearest.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnNearest.Name = "btnNearest";
-            this.btnNearest.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnNearest.Size = new System.Drawing.Size(167, 36);
-            this.btnNearest.TabIndex = 4;
-            this.btnNearest.Text = "Ближайшие записи";
-            this.btnNearest.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnNearest.UseAccentColor = false;
-            this.btnNearest.UseVisualStyleBackColor = true;
+            this.btnRecord.AutoSize = false;
+            this.btnRecord.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRecord.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnRecord.Depth = 0;
+            this.btnRecord.HighEmphasis = true;
+            this.btnRecord.Icon = null;
+            this.btnRecord.Location = new System.Drawing.Point(7, 73);
+            this.btnRecord.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnRecord.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnRecord.Name = "btnRecord";
+            this.btnRecord.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnRecord.Size = new System.Drawing.Size(167, 36);
+            this.btnRecord.TabIndex = 4;
+            this.btnRecord.Text = "Записать клиента";
+            this.btnRecord.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnRecord.UseAccentColor = false;
+            this.btnRecord.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
@@ -247,7 +226,26 @@
             this.btnExit.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnExit.UseAccentColor = false;
             this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.AutoSize = false;
+            this.btnSearch.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSearch.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnSearch.Depth = 0;
+            this.btnSearch.HighEmphasis = true;
+            this.btnSearch.Icon = null;
+            this.btnSearch.Location = new System.Drawing.Point(7, 25);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnSearch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnSearch.Size = new System.Drawing.Size(167, 36);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "Поиск";
+            this.btnSearch.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnSearch.UseAccentColor = false;
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // labelCount
             // 
@@ -275,6 +273,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "ListServiceForm";
             this.Text = "ListServiceForm";
+            this.Load += new System.EventHandler(this.ListServiceForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
