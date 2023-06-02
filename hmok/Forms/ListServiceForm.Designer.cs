@@ -53,7 +53,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(178, 51);
             this.panel1.TabIndex = 0;
-          
             // 
             // materialLabel1
             // 
@@ -206,6 +205,7 @@
             this.btnRecord.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnRecord.UseAccentColor = false;
             this.btnRecord.UseVisualStyleBackColor = true;
+            this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
             // 
             // btnExit
             // 

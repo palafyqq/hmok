@@ -33,11 +33,11 @@
             this.dateRecording = new System.Windows.Forms.DateTimePicker();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.btnAdd = new MaterialSkin.Controls.MaterialButton();
             this.cbClient = new MaterialSkin.Controls.MaterialComboBox();
             this.cbService = new MaterialSkin.Controls.MaterialComboBox();
-            this.txtBoxDuration = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.txtDuration = new MaterialSkin.Controls.MaterialTextBox2();
+            this.btnClose = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
             // 
             // materialLabel1
@@ -96,25 +96,26 @@
             this.materialLabel4.TabIndex = 4;
             this.materialLabel4.Text = "Длительность услуги";
             // 
-            // materialButton1
+            // btnAdd
             // 
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(62, 365);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(158, 36);
-            this.materialButton1.TabIndex = 11;
-            this.materialButton1.Text = "Создать запись";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.btnAdd.AutoSize = false;
+            this.btnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAdd.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnAdd.Depth = 0;
+            this.btnAdd.HighEmphasis = true;
+            this.btnAdd.Icon = null;
+            this.btnAdd.Location = new System.Drawing.Point(62, 365);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAdd.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnAdd.Size = new System.Drawing.Size(158, 36);
+            this.btnAdd.TabIndex = 11;
+            this.btnAdd.Text = "Создать запись";
+            this.btnAdd.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnAdd.UseAccentColor = false;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cbClient
             // 
@@ -125,7 +126,7 @@
             this.cbClient.DropDownHeight = 174;
             this.cbClient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbClient.DropDownWidth = 121;
-            this.cbClient.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cbClient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbClient.FormattingEnabled = true;
             this.cbClient.IntegralHeight = false;
@@ -147,7 +148,7 @@
             this.cbService.DropDownHeight = 174;
             this.cbService.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbService.DropDownWidth = 121;
-            this.cbService.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbService.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cbService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbService.FormattingEnabled = true;
             this.cbService.IntegralHeight = false;
@@ -159,65 +160,67 @@
             this.cbService.Size = new System.Drawing.Size(250, 49);
             this.cbService.StartIndex = 0;
             this.cbService.TabIndex = 13;
+            this.cbService.SelectedIndexChanged += new System.EventHandler(this.cbService_SelectedIndexChanged);
             // 
-            // txtBoxDuration
+            // txtDuration
             // 
-            this.txtBoxDuration.AnimateReadOnly = false;
-            this.txtBoxDuration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtBoxDuration.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtBoxDuration.Depth = 0;
-            this.txtBoxDuration.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtBoxDuration.HideSelection = true;
-            this.txtBoxDuration.LeadingIcon = null;
-            this.txtBoxDuration.Location = new System.Drawing.Point(22, 305);
-            this.txtBoxDuration.MaxLength = 32767;
-            this.txtBoxDuration.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtBoxDuration.Name = "txtBoxDuration";
-            this.txtBoxDuration.PasswordChar = '\0';
-            this.txtBoxDuration.PrefixSuffixText = null;
-            this.txtBoxDuration.ReadOnly = false;
-            this.txtBoxDuration.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtBoxDuration.SelectedText = "";
-            this.txtBoxDuration.SelectionLength = 0;
-            this.txtBoxDuration.SelectionStart = 0;
-            this.txtBoxDuration.ShortcutsEnabled = true;
-            this.txtBoxDuration.Size = new System.Drawing.Size(250, 48);
-            this.txtBoxDuration.TabIndex = 14;
-            this.txtBoxDuration.TabStop = false;
-            this.txtBoxDuration.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBoxDuration.TrailingIcon = null;
-            this.txtBoxDuration.UseSystemPasswordChar = false;
+            this.txtDuration.AnimateReadOnly = false;
+            this.txtDuration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtDuration.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDuration.Depth = 0;
+            this.txtDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDuration.HideSelection = true;
+            this.txtDuration.LeadingIcon = null;
+            this.txtDuration.Location = new System.Drawing.Point(22, 305);
+            this.txtDuration.MaxLength = 32767;
+            this.txtDuration.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.PasswordChar = '\0';
+            this.txtDuration.PrefixSuffixText = null;
+            this.txtDuration.ReadOnly = false;
+            this.txtDuration.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDuration.SelectedText = "";
+            this.txtDuration.SelectionLength = 0;
+            this.txtDuration.SelectionStart = 0;
+            this.txtDuration.ShortcutsEnabled = true;
+            this.txtDuration.Size = new System.Drawing.Size(250, 48);
+            this.txtDuration.TabIndex = 14;
+            this.txtDuration.TabStop = false;
+            this.txtDuration.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDuration.TrailingIcon = null;
+            this.txtDuration.UseSystemPasswordChar = false;
             // 
-            // materialButton2
+            // btnClose
             // 
-            this.materialButton2.AutoSize = false;
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(62, 413);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(158, 36);
-            this.materialButton2.TabIndex = 11;
-            this.materialButton2.Text = "Выйти";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
+            this.btnClose.AutoSize = false;
+            this.btnClose.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnClose.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnClose.Depth = 0;
+            this.btnClose.HighEmphasis = true;
+            this.btnClose.Icon = null;
+            this.btnClose.Location = new System.Drawing.Point(62, 413);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnClose.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnClose.Size = new System.Drawing.Size(158, 36);
+            this.btnClose.TabIndex = 11;
+            this.btnClose.Text = "Выйти";
+            this.btnClose.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnClose.UseAccentColor = false;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FormCustomerRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 464);
-            this.Controls.Add(this.txtBoxDuration);
+            this.Controls.Add(this.txtDuration);
             this.Controls.Add(this.cbService);
             this.Controls.Add(this.cbClient);
-            this.Controls.Add(this.materialButton2);
-            this.Controls.Add(this.materialButton1);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.dateRecording);
@@ -238,10 +241,10 @@
         private DateTimePicker dateRecording;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton btnAdd;
         private MaterialSkin.Controls.MaterialComboBox cbClient;
         private MaterialSkin.Controls.MaterialComboBox cbService;
-        private MaterialSkin.Controls.MaterialTextBox2 txtBoxDuration;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialTextBox2 txtDuration;
+        private MaterialSkin.Controls.MaterialButton btnClose;
     }
 }

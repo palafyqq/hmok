@@ -63,5 +63,11 @@ namespace hmok.Forms
         {
             labelCount.Text = flowLayoutPanel1.Controls.Count + " из " + GlobalVar.listService.MainTable.Rows.Count;
         }
+
+        private void btnRecord_Click(object sender, EventArgs e)
+        {
+            FormCustomerRecord q = new FormCustomerRecord();  
+            q.Show();
+        }
     }
 }
