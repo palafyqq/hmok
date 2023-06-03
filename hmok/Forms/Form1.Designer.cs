@@ -104,6 +104,8 @@
             this.Controls.Add(this.materialTextBox21);
             this.Controls.Add(this.materialLabel1);
             this.Name = "Form1";
+            this.Sizable = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

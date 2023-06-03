@@ -1,6 +1,6 @@
 ﻿namespace hmok.Forms
 {
-    partial class FormAddService
+    partial class FormEditService
     {
         /// <summary>
         /// Required designer variable.
@@ -33,8 +33,8 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.btnAdd = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnEdit = new MaterialSkin.Controls.MaterialButton();
             this.btnClose = new MaterialSkin.Controls.MaterialButton();
             this.txtTitle = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtCost = new MaterialSkin.Controls.MaterialTextBox2();
@@ -49,7 +49,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(20, 64);
+            this.materialLabel1.Location = new System.Drawing.Point(15, 76);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(73, 19);
@@ -61,7 +61,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(20, 137);
+            this.materialLabel2.Location = new System.Drawing.Point(15, 149);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(83, 19);
@@ -73,7 +73,7 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(20, 210);
+            this.materialLabel3.Location = new System.Drawing.Point(15, 222);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(108, 19);
@@ -85,7 +85,7 @@
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(20, 283);
+            this.materialLabel4.Location = new System.Drawing.Point(15, 295);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(73, 19);
@@ -97,45 +97,45 @@
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(20, 356);
+            this.materialLabel5.Location = new System.Drawing.Point(15, 368);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(57, 19);
             this.materialLabel5.TabIndex = 0;
             this.materialLabel5.Text = "Скидка";
             // 
-            // materialLabel7
+            // materialLabel6
             // 
-            this.materialLabel7.AutoSize = true;
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(20, 429);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(102, 19);
-            this.materialLabel7.TabIndex = 0;
-            this.materialLabel7.Text = "Изображение";
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel6.Location = new System.Drawing.Point(15, 441);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(102, 19);
+            this.materialLabel6.TabIndex = 0;
+            this.materialLabel6.Text = "Изображение";
             // 
-            // btnAdd
+            // btnEdit
             // 
-            this.btnAdd.AutoSize = false;
-            this.btnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAdd.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnAdd.Depth = 0;
-            this.btnAdd.HighEmphasis = true;
-            this.btnAdd.Icon = null;
-            this.btnAdd.Location = new System.Drawing.Point(20, 518);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnAdd.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAdd.Size = new System.Drawing.Size(250, 36);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "Добавить";
-            this.btnAdd.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnAdd.UseAccentColor = false;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnEdit.AutoSize = false;
+            this.btnEdit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEdit.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnEdit.Depth = 0;
+            this.btnEdit.HighEmphasis = true;
+            this.btnEdit.Icon = null;
+            this.btnEdit.Location = new System.Drawing.Point(7, 523);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEdit.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnEdit.Size = new System.Drawing.Size(297, 36);
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.Text = "Изменить";
+            this.btnEdit.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnEdit.UseAccentColor = false;
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnClose
             // 
@@ -145,13 +145,13 @@
             this.btnClose.Depth = 0;
             this.btnClose.HighEmphasis = true;
             this.btnClose.Icon = null;
-            this.btnClose.Location = new System.Drawing.Point(20, 566);
+            this.btnClose.Location = new System.Drawing.Point(7, 571);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnClose.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnClose.Name = "btnClose";
             this.btnClose.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnClose.Size = new System.Drawing.Size(250, 36);
-            this.btnClose.TabIndex = 2;
+            this.btnClose.Size = new System.Drawing.Size(297, 36);
+            this.btnClose.TabIndex = 1;
             this.btnClose.Text = "Отмена";
             this.btnClose.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnClose.UseAccentColor = false;
@@ -167,7 +167,7 @@
             this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTitle.HideSelection = true;
             this.txtTitle.LeadingIcon = null;
-            this.txtTitle.Location = new System.Drawing.Point(20, 86);
+            this.txtTitle.Location = new System.Drawing.Point(15, 98);
             this.txtTitle.MaxLength = 32767;
             this.txtTitle.MouseState = MaterialSkin.MouseState.OUT;
             this.txtTitle.Name = "txtTitle";
@@ -179,8 +179,8 @@
             this.txtTitle.SelectionLength = 0;
             this.txtTitle.SelectionStart = 0;
             this.txtTitle.ShortcutsEnabled = true;
-            this.txtTitle.Size = new System.Drawing.Size(250, 48);
-            this.txtTitle.TabIndex = 4;
+            this.txtTitle.Size = new System.Drawing.Size(289, 48);
+            this.txtTitle.TabIndex = 2;
             this.txtTitle.TabStop = false;
             this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtTitle.TrailingIcon = null;
@@ -195,7 +195,7 @@
             this.txtCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCost.HideSelection = true;
             this.txtCost.LeadingIcon = null;
-            this.txtCost.Location = new System.Drawing.Point(20, 159);
+            this.txtCost.Location = new System.Drawing.Point(15, 171);
             this.txtCost.MaxLength = 32767;
             this.txtCost.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCost.Name = "txtCost";
@@ -207,8 +207,8 @@
             this.txtCost.SelectionLength = 0;
             this.txtCost.SelectionStart = 0;
             this.txtCost.ShortcutsEnabled = true;
-            this.txtCost.Size = new System.Drawing.Size(250, 48);
-            this.txtCost.TabIndex = 4;
+            this.txtCost.Size = new System.Drawing.Size(289, 48);
+            this.txtCost.TabIndex = 2;
             this.txtCost.TabStop = false;
             this.txtCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtCost.TrailingIcon = null;
@@ -223,7 +223,7 @@
             this.txtDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDuration.HideSelection = true;
             this.txtDuration.LeadingIcon = null;
-            this.txtDuration.Location = new System.Drawing.Point(20, 232);
+            this.txtDuration.Location = new System.Drawing.Point(15, 244);
             this.txtDuration.MaxLength = 32767;
             this.txtDuration.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDuration.Name = "txtDuration";
@@ -235,8 +235,8 @@
             this.txtDuration.SelectionLength = 0;
             this.txtDuration.SelectionStart = 0;
             this.txtDuration.ShortcutsEnabled = true;
-            this.txtDuration.Size = new System.Drawing.Size(250, 48);
-            this.txtDuration.TabIndex = 4;
+            this.txtDuration.Size = new System.Drawing.Size(289, 48);
+            this.txtDuration.TabIndex = 2;
             this.txtDuration.TabStop = false;
             this.txtDuration.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtDuration.TrailingIcon = null;
@@ -251,7 +251,7 @@
             this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDescription.HideSelection = true;
             this.txtDescription.LeadingIcon = null;
-            this.txtDescription.Location = new System.Drawing.Point(20, 305);
+            this.txtDescription.Location = new System.Drawing.Point(15, 317);
             this.txtDescription.MaxLength = 32767;
             this.txtDescription.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDescription.Name = "txtDescription";
@@ -263,8 +263,8 @@
             this.txtDescription.SelectionLength = 0;
             this.txtDescription.SelectionStart = 0;
             this.txtDescription.ShortcutsEnabled = true;
-            this.txtDescription.Size = new System.Drawing.Size(250, 48);
-            this.txtDescription.TabIndex = 4;
+            this.txtDescription.Size = new System.Drawing.Size(289, 48);
+            this.txtDescription.TabIndex = 2;
             this.txtDescription.TabStop = false;
             this.txtDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtDescription.TrailingIcon = null;
@@ -279,7 +279,7 @@
             this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDiscount.HideSelection = true;
             this.txtDiscount.LeadingIcon = null;
-            this.txtDiscount.Location = new System.Drawing.Point(20, 378);
+            this.txtDiscount.Location = new System.Drawing.Point(15, 390);
             this.txtDiscount.MaxLength = 32767;
             this.txtDiscount.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDiscount.Name = "txtDiscount";
@@ -291,8 +291,8 @@
             this.txtDiscount.SelectionLength = 0;
             this.txtDiscount.SelectionStart = 0;
             this.txtDiscount.ShortcutsEnabled = true;
-            this.txtDiscount.Size = new System.Drawing.Size(250, 48);
-            this.txtDiscount.TabIndex = 4;
+            this.txtDiscount.Size = new System.Drawing.Size(289, 48);
+            this.txtDiscount.TabIndex = 2;
             this.txtDiscount.TabStop = false;
             this.txtDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtDiscount.TrailingIcon = null;
@@ -307,7 +307,7 @@
             this.txtPicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPicture.HideSelection = true;
             this.txtPicture.LeadingIcon = null;
-            this.txtPicture.Location = new System.Drawing.Point(20, 451);
+            this.txtPicture.Location = new System.Drawing.Point(15, 463);
             this.txtPicture.MaxLength = 32767;
             this.txtPicture.MouseState = MaterialSkin.MouseState.OUT;
             this.txtPicture.Name = "txtPicture";
@@ -319,36 +319,35 @@
             this.txtPicture.SelectionLength = 0;
             this.txtPicture.SelectionStart = 0;
             this.txtPicture.ShortcutsEnabled = true;
-            this.txtPicture.Size = new System.Drawing.Size(250, 48);
-            this.txtPicture.TabIndex = 4;
+            this.txtPicture.Size = new System.Drawing.Size(289, 48);
+            this.txtPicture.TabIndex = 2;
             this.txtPicture.TabStop = false;
             this.txtPicture.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPicture.TrailingIcon = null;
             this.txtPicture.UseSystemPasswordChar = false;
             // 
-            // FormAddService
+            // FormEditService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 616);
-            this.Controls.Add(this.txtDiscount);
+            this.ClientSize = new System.Drawing.Size(311, 616);
             this.Controls.Add(this.txtPicture);
+            this.Controls.Add(this.txtDiscount);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtDuration);
             this.Controls.Add(this.txtCost);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.materialLabel7);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.materialLabel6);
             this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
-            this.Name = "FormAddService";
-            this.Sizable = false;
+            this.Name = "FormEditService";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAddService";
+            this.Text = "FormEditService";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,8 +360,8 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private MaterialSkin.Controls.MaterialLabel materialLabel7;
-        private MaterialSkin.Controls.MaterialButton btnAdd;
+        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private MaterialSkin.Controls.MaterialButton btnEdit;
         private MaterialSkin.Controls.MaterialButton btnClose;
         private MaterialSkin.Controls.MaterialTextBox2 txtTitle;
         private MaterialSkin.Controls.MaterialTextBox2 txtCost;

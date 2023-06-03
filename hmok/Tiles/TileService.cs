@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using hmok.Code;
+using hmok.Forms;
 
 namespace hmok.Tiles
 {
@@ -40,15 +41,34 @@ namespace hmok.Tiles
         {
             labeltitle.Text = Title;
             FlowLayoutPanel = _panel;
-            pictureBox1.Image=Image.FromFile(GlobalVar.MainFolderPicture+PathPicture);
+            pictureBox1.Image = Image.FromFile(GlobalVar.MainFolderPicture + PathPicture);//
             if (Discount>0)
             {
                 labelDiscount.Visible= true;
                 labelDiscount.Text="* скидка"+Discount+"%";
                 this.BackColor = Color.FromArgb(192, 255, 192);
-                Cost = Cost - ((Cost * Discount) / 100);
+                Cost = Cost - (Cost * (Discount / 100));
             }
             labelCostAndTime.Text = Cost.ToString() + " рублей за " + Time + " минут";
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            FormEditService edit= new FormEditService();
+            edit.LoadData(IDBase.ToString(),Title,Cost.ToString(),Time.ToString(),"",Discount.ToString(),PathPicture);
+            edit.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы уверены, что хотите удалить "+Title+" ?","Внимание",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.Yes) 
+            {
+                Command command = new Command();
+                command.SendCommand("delete from Service Where ID_Service=" + IDBase);
+                FlowLayoutPanel.Controls.RemoveAt(IDMassiv);
+                GlobalVar.Tiles.RemoveAt(IDMassiv);
+            }
+            
         }
     }
 }

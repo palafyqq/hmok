@@ -27,13 +27,18 @@ namespace hmok.Forms
             Command command1 = new Command();
 
             command1.AddParameter("@title", SqlDbType.NVarChar, txtTitle.Text);
-            command1.AddParameter("@mainPicure", SqlDbType.NVarChar, txtPicture.Text);
+            command1.AddParameter("@mainPicture", SqlDbType.NVarChar, txtPicture.Text);
             command1.AddParameter("@duration", SqlDbType.NVarChar, txtDuration.Text);
             command1.AddParameter("@cost", SqlDbType.NVarChar, txtCost.Text);
-            command1.AddParameter("@discount", SqlDbType.Float, Convert.ToString(Convert.ToDouble(txtDiscount.Text) * 0.01));
+            command1.AddParameter("@discount", SqlDbType.Int, txtDiscount.Text);
 
             command1.SendCommand("INSERT INTO Service values (@title, @mainPicture, @duration, @cost, @discount);");
             MessageBox.Show("Услуга добавлена!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

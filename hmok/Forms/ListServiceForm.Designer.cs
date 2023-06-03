@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnUpdate = new MaterialSkin.Controls.MaterialButton();
             this.BtnSortingV = new MaterialSkin.Controls.MaterialButton();
             this.BtnSortingY = new MaterialSkin.Controls.MaterialButton();
@@ -41,6 +40,7 @@
             this.btnExit = new MaterialSkin.Controls.MaterialButton();
             this.btnSearch = new MaterialSkin.Controls.MaterialButton();
             this.labelCount = new MaterialSkin.Controls.MaterialLabel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -66,13 +66,6 @@
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Меню";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(183, 112);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(611, 303);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
             // btnUpdate
             // 
             this.btnUpdate.AutoSize = false;
@@ -92,6 +85,7 @@
             this.btnUpdate.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnUpdate.UseAccentColor = false;
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // BtnSortingV
             // 
@@ -112,6 +106,7 @@
             this.BtnSortingV.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.BtnSortingV.UseAccentColor = false;
             this.BtnSortingV.UseVisualStyleBackColor = true;
+            this.BtnSortingV.Click += new System.EventHandler(this.BtnSortingV_Click);
             // 
             // BtnSortingY
             // 
@@ -132,6 +127,7 @@
             this.BtnSortingY.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.BtnSortingY.UseAccentColor = false;
             this.BtnSortingY.UseVisualStyleBackColor = true;
+            this.BtnSortingY.Click += new System.EventHandler(this.BtnSortingY_Click);
             // 
             // panel2
             // 
@@ -165,6 +161,7 @@
             this.btnNearest.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnNearest.UseAccentColor = false;
             this.btnNearest.UseVisualStyleBackColor = true;
+            this.btnNearest.Click += new System.EventHandler(this.btnNearest_Click);
             // 
             // btnAddService
             // 
@@ -185,6 +182,7 @@
             this.btnAddService.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnAddService.UseAccentColor = false;
             this.btnAddService.UseVisualStyleBackColor = true;
+            this.btnAddService.Click += new System.EventHandler(this.btnAddService_Click);
             // 
             // btnRecord
             // 
@@ -226,6 +224,7 @@
             this.btnExit.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnExit.UseAccentColor = false;
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSearch
             // 
@@ -246,34 +245,49 @@
             this.btnSearch.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnSearch.UseAccentColor = false;
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // labelCount
             // 
             this.labelCount.AutoSize = true;
             this.labelCount.Depth = 0;
             this.labelCount.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.labelCount.Location = new System.Drawing.Point(443, 422);
+            this.labelCount.Location = new System.Drawing.Point(471, 422);
             this.labelCount.MouseState = MaterialSkin.MouseState.HOVER;
             this.labelCount.Name = "labelCount";
             this.labelCount.Size = new System.Drawing.Size(44, 19);
             this.labelCount.TabIndex = 4;
             this.labelCount.Text = "0 из 0";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(186, 115);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(656, 300);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
             // ListServiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(848, 455);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.labelCount);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.BtnSortingY);
             this.Controls.Add(this.BtnSortingV);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "ListServiceForm";
+            this.ShowIcon = false;
+            this.Sizable = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListServiceForm";
             this.Load += new System.EventHandler(this.ListServiceForm_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ListServiceForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ListServiceForm_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ListServiceForm_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -286,7 +300,6 @@
 
         private Panel panel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private FlowLayoutPanel flowLayoutPanel1;
         private MaterialSkin.Controls.MaterialButton btnUpdate;
         private MaterialSkin.Controls.MaterialButton BtnSortingV;
         private MaterialSkin.Controls.MaterialButton BtnSortingY;
@@ -297,5 +310,6 @@
         private MaterialSkin.Controls.MaterialButton btnSearch;
         private MaterialSkin.Controls.MaterialButton btnExit;
         private MaterialSkin.Controls.MaterialLabel labelCount;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

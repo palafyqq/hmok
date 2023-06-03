@@ -227,6 +227,8 @@
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.materialLabel1);
             this.Name = "FormCustomerRecord";
+            this.Sizable = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCustomerRecord";
             this.Load += new System.EventHandler(this.FormCustomerRecord_Load);
             this.ResumeLayout(false);

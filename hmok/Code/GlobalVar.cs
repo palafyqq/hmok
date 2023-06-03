@@ -12,7 +12,7 @@ namespace hmok.Code
     {
         public static bool AdministrationMode;
         public static Command listService = new Command();
-        public static string MainFolderPicture = "C:\\Users\\mee1n\\source\\repos\\hmok\\hmok\\Photos\\";
+        public static string MainFolderPicture = "D:\\";
         public static List<TileService> Tiles = new List<TileService>();
     }
 }

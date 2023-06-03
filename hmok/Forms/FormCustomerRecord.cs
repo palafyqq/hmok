@@ -36,13 +36,13 @@ namespace hmok.Forms
             for (int i = 0; i<Clients.MainTable.Rows.Count; i++)
             {
                 cbClient.Items.Add(Clients.MainTable.Rows[i][0].ToString()+" "
-                    +Clients.MainTable.Rows[i][1].ToString()+" "+Clients.MainTable.Rows[i][1].ToString());
+                    +Clients.MainTable.Rows[i][1].ToString()+" "+Clients.MainTable.Rows[i][2].ToString());
             }
         }
         private void LoadServices()
         {
 
-            Clients.LoadData("select TitleService,Duration from Service");
+            Services.LoadData("select TitleService, Duration from Service");
             for (int i = 0; i<Services.MainTable.Rows.Count; i++)
             {
                 cbService.Items.Add(Services.MainTable.Rows[i][0].ToString());
@@ -57,9 +57,9 @@ namespace hmok.Forms
         private void btnAdd_Click(object sender, EventArgs e)
         {
             command.AddParameter("@title", SqlDbType.NVarChar, cbService.Text);
-            command.AddParameter("@strtDate",SqlDbType.DateTime, dateRecording.Value.ToString());
+            command.AddParameter("@startDate",SqlDbType.DateTime, dateRecording.Value.ToString());
             command.AddParameter("@surname", SqlDbType.NVarChar, Clients.MainTable.Rows[cbClient.SelectedIndex][0].ToString());
-            command.SendCommand("insert into ServiceClient values (@title,@startDate,@surname");
+            command.SendCommand("insert into ServiceClient values (@title,@startDate,@surname)");
             MessageBox.Show("Запись создана успешно!","Информация",MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }

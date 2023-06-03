@@ -41,7 +41,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(140, 131);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -76,21 +76,23 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(157, 100);
+            this.btnEdit.Location = new System.Drawing.Point(157, 84);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(134, 31);
             this.btnEdit.TabIndex = 3;
             this.btnEdit.Text = "Редактировать";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(297, 100);
+            this.btnDelete.Location = new System.Drawing.Point(297, 84);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(134, 31);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Удалить";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // TileService
             // 
@@ -103,7 +105,7 @@
             this.Controls.Add(this.labeltitle);
             this.Controls.Add(this.pictureBox1);
             this.Name = "TileService";
-            this.Size = new System.Drawing.Size(654, 150);
+            this.Size = new System.Drawing.Size(657, 132);
             this.Load += new System.EventHandler(this.TileService_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
